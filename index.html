@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Zero</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://app.activeloop.ai/visualizer/1.0.19/vis.js">
+  </script>
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <div class="topnav">
+
+    <a href="https://zerosystems.com" class="logo" aria-label="Zero Cognitive Systems">
+      <svg width="137" height="40" viewBox="0 0 137 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M130.457 0L100.184 33.9797L106.725 40L136.999 6.02027L130.457 0Z" fill="url(#paint0_linear_83_6787)">
+        </path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M118.589 29.7547C113.287 29.7547 109 25.3865 109 19.9978C109 14.6092 113.287 10.241 118.589 10.241C123.891 10.241 128.189 14.6092 128.189 19.9978C128.189 25.3865 123.891 29.7547 118.589 29.7547ZM118.589 1.43005C108.498 1.43005 100.32 9.74141 100.32 19.9978C100.32 30.2543 108.498 38.5656 118.589 38.5656C128.681 38.5656 136.869 30.2543 136.869 19.9978C136.869 9.74141 128.681 1.43005 118.589 1.43005Z"
+          fill="black"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M74.7821 10.2488H84.459C86.6924 10.2488 88.5095 12.0956 88.5095 14.3656V15.3554C88.5095 17.6254 86.6924 19.4721 84.459 19.4721H74.7821V10.2488ZM96.4571 15.3554V14.3656C96.4571 7.63084 91.0854 2.17126 84.459 2.17126H66.8345V17.6839H66.8203V37.8312H74.7675V27.5497H82.5743L87.1978 37.8306H95.9401L90.5477 25.8497C94.0805 23.7275 96.4571 19.8282 96.4571 15.3554Z"
+          fill="black"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M29.2911 10.2499L11.8976 29.7531H29.7478V37.82H0V29.7531L17.3716 10.2499H0.457959V2.17236H29.2911V10.2499Z"
+          fill="black"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M41.9706 10.2486V16.2862H59.6062V23.7128H41.9706V29.7471H61.7571V37.8243H34.0234V2.17139L61.7571 2.23321V10.3104L41.9706 10.2486Z"
+          fill="black"></path>
+        <defs>
+          <linearGradient id="paint0_linear_83_6787" x1="130.698" y1="2.92602" x2="84.9231" y2="50.2543"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00FFFF"></stop>
+            <stop offset="1" stop-color="#0000FF"></stop>
+          </linearGradient>
+        </defs>
+      </svg>
+    </a>
+    <input type="text" id="searchTxt" placeholder="Query..." onkeypress="clickPress(event)">
+  </div>
+
+
+
+  <div id='container'></div>
+
+  <script>
+    let container = document.getElementById('container')
+    let p = window.vis.visualize("hub://zerosystems/document-demo2", null, null, container, {backlink: false, renderingOptions: {imageQuality: "high"}})
+
+  </script>
+
+
+</body>
+
+</html>
